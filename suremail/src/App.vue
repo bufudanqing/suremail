@@ -1,0 +1,35 @@
+<template>
+  <div id="app">
+    <navigation></navigation>
+    <router-view/>
+    <myfooter></myfooter>
+  </div>
+</template>
+
+<script>
+import navigation from './components/navigation.vue'
+import myfooter from './components/myfooter.vue'
+import joinus from './components/joinus.vue'
+
+export default {
+  name: 'app',
+  components: {
+    navigation,
+    myfooter,
+    joinus
+  }
+}
+</script>
+
+<style>
+body{
+  margin:0;
+  padding: 0;
+}
+#app {
+  font-family: '微软雅黑','Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+</style>
