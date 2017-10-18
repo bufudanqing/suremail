@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import index from '../components/index.vue'
 import joinus from '../components/joinus.vue'
 import more from '../components/more.vue'
+import download from '../components/download.vue'
 
 Vue.use(Router)
 // Vue.use(Element)
@@ -25,6 +26,16 @@ export default new Router({
       path: '/components/more',
       name: 'more',
       component: more
+    },
+    {
+      path: '/components/download',
+      name: 'down',
+      component: download
+    },
+    // 重定向
+    {
+      path: '/',
+      redirect: '/components/index'
     }
   ]
 })

@@ -64,10 +64,8 @@
 
   border-bottom:solid 2px transparent;
   transition: all .2s ease-in-out;
-  /*margin-top:25px;*/
-  /*font-family: "ºÚÌå";*/
 }
-.menu-active,.router-link-active{
+.router-link-active{
   border-bottom: solid 2px #f39800;
 }
 

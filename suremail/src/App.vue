@@ -12,6 +12,7 @@ import myfooter from './components/myfooter.vue'
 import index from './components/index.vue'
 import joinus from './components/joinus.vue'
 import more from './components/more.vue'
+import download from './components/download.vue'
 
 export default {
   name: 'app',
@@ -20,7 +21,8 @@ export default {
     myfooter,
     joinus,
     index,
-    more
+    more,
+    download
   }
 }
 </script>

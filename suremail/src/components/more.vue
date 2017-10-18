@@ -26,6 +26,9 @@
                 </a>
             </div>
           </div>
+           <div class="v-ad">
+              此处视频
+          </div>  
           <div class="partner">
             <div class="partner-title">
                 <img :src="partner" />
@@ -39,7 +42,23 @@
 
             </div>
             <a class="know-more">了解更多</a>
-          </div>
+          </div> 
+              
+        </div>
+        <div class="contact-us">
+            <div class="contactus-title">
+                <img :src="contact" />
+            </div>
+            <div class="contact-info">
+                <div class="contact-img">
+                    <img :src="info" />
+                </div>
+                <div class="info-form">
+                    <input class="email" placeholder="Email address or username" />
+                    <textarea class="message" placeholder="Message"></textarea>
+                    <Button class="send" type="success" long>Send</Button>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -55,7 +74,9 @@
           anyou: '/static/img/more/anyou.png',
           abouttitle: '/static/img/more/title1.png',
           partner: '/static/img/more/partner.png',
-          logo: '/static/img/more/logo.png'
+          logo: '/static/img/more/logo.png',
+          contact: '/static/img/more/contact.png',
+          info: '/static/img/more/info.png'
         }
       }
     }
@@ -67,7 +88,8 @@
   height: 100%;
 }
 .main{
-  height:3800px;
+  /*height:3800px;*/
+  height: auto;
   width:1200px;
   padding-top:78px;
   margin: 0 auto;
@@ -143,7 +165,7 @@
 .partner{
     padding-top: 105px;
     height: 905px;
-    border:solid;
+    /*border:solid;*/
     width: 100%;
 }
 .partner-title>img{
@@ -181,6 +203,88 @@
     font-size: 16px;
     text-align: center;
     line-height: 30px;
+}
+.v-ad{
+    width: 100%;
+    height: 644px;
+    text-align: center;
+}
+/*联系我们*/
+.contact-us{
+    background-color: #e7e8e9;
+    width: 100%;
+    height: 528px;
+    padding-top: 70px;
+}
+.contactus-title>img{
+    display: block;
+    margin:0 auto;
+}
+.contact-info{
+    width: 1000px;
+    height: 400px;
+    padding-top: 55px;
+    margin:0 auto;
+    /*border:solid;*/
+}
+.contact-img{
+    width: 420px;
+    float: left;
+}
+.contact-img>img{
+    display: inline-block;
+}
+.info-form{
+    width:434px;
+    height:250px;
+    float:right;
+    margin-top: 20px;
+}
+.email{
+    width: 434px;
+    height: 35px;
+    border:none;
+    border-radius:1px;
+    background-color: #f5f5f5;
+    margin-bottom: 12px;
+    text-indent:12px;
+    font-size:18px;
+    color:#999999;
+    font-family: "Plain";
+}
+.message{
+    padding-top: 10px;
+    width: 434px;
+    height:100px;
+    border:none;
+    border-radius:1px;
+    background-color: #f5f5f5;
+    margin-bottom: 28px;
+    text-indent:12px;
+    font-size:18px;
+    color:#999999;
+    font-family: "Plain";
+}
+.email:focus{
+    border:none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline-offset:0;
+}
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.send{
+    height: 45px;
+    background-color: #226eb2;
+    font-size:20px;
+    border:none;
+    box-shadow: 0 0 10px grey;
+    background-image: url(/static/img/more/button.png);
+    transition: all .3s ease-in-out;
+}
+.send:hover{
+    box-shadow: 0 0 20px grey;
 }
 @keyframes pulse
 {
