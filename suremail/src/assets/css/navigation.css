@@ -47,12 +47,11 @@
   padding: 0 20px;
   height:30px;
   vertical-align: middle;
-  border-bottom:solid 2px transparent;
-  transition: all .2s ease-in-out;
+ 
 
 }
 
-.nav-wrapper>li:hover{
+.nav-wrapper>li a:hover{
   border-bottom: solid 2px #f39800;
 }
 .nav-wrapper>li a{
@@ -62,6 +61,9 @@
   font-weight:500;
   display: block;
   font-family: "Microsoft yahei";
+
+  border-bottom:solid 2px transparent;
+  transition: all .2s ease-in-out;
   /*margin-top:25px;*/
   /*font-family: "ºÚÌå";*/
 }

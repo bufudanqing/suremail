@@ -7,15 +7,19 @@ import iView from 'iview'
 import 'iview/dist/styles/iview.css'    // 使用 CSS
 require('./assets/css/navigation.css')
 
-// Vue.use(VueRouter);
+// Vue.use(VueRouter)
 Vue.use(iView)
 
 Vue.config.productionTip = false
+// const router = new VueRouter({
+//   mode: 'history',
+//   routes: routers
+// })
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
+  router,  // 注入到根实例中
   template: '<App/>',
   components: { App }
 })

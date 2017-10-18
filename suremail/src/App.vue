@@ -9,14 +9,18 @@
 <script>
 import navigation from './components/navigation.vue'
 import myfooter from './components/myfooter.vue'
+import index from './components/index.vue'
 import joinus from './components/joinus.vue'
+import more from './components/more.vue'
 
 export default {
   name: 'app',
   components: {
     navigation,
     myfooter,
-    joinus
+    joinus,
+    index,
+    more
   }
 }
 </script>

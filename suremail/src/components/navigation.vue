@@ -10,19 +10,18 @@
         <ul class="nav-wrapper">
           <li>
             <router-link to="/components/index">首页</router-link>
-            <!-- <a href="#" target="_blank">首页</a> -->
           </li>
           <li>
-            <a href="#" target="_blank">走进安邮</a>
+            <router-link to="/components/more">走进安邮</router-link>
           </li>
           <li>
-            <a href="#" target="_blank">安邮产品</a>
+            <router-link to="/components/product">安邮产品</router-link>
           </li>
           <li>
-            <a href="#" target="_blank">成功案例</a>
+            <router-link to="/components/enterprise">成功案例</router-link>
           </li>
           <li>
-            <a href="#" target="_blank">下载</a>
+            <router-link to="/components/download">下载</router-link>
           </li>
           <li>
             <router-link to="/components/joinus">加入我们</router-link>
