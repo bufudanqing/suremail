@@ -9,7 +9,7 @@
           <div class="title">
             <img :src="title" />
           </div>
-          <div class="e-map"> 
+          <div id="map" > 
              
           </div>
         </div>
@@ -24,6 +24,47 @@
         return {
           banner: '/static/img/enterprise/banner.png',
           title: '/static/img/enterprise/title.png'
+        }
+      },
+      mounted () {
+        this.drawMap()
+      },
+      methods: {
+        drawMap () {
+          // 基于准备好的dom，初始化echarts实例
+          let myChart = this.$echarts.init(document.getElementById('map'))
+          // 绘制图标
+          myChart.setOption({
+            // title: { text: '安邮成功案例' },
+            tooltip: {
+              backgroundColor: '#fff',
+              textStyle: {color: '#000'}
+            },
+            series: [{
+              type: 'map',
+              mapType: 'china',
+              itemStyle: {
+                normal: {
+                  areaColor: '#4F6A82',
+                  borderColor: '#090C0F'
+                }
+              },
+              data: [
+                {name: '北京', selected: true}
+              ],
+              label: {
+                normal: {
+                  // 显示省份名称
+                  show: true,
+                  color: '#fff'
+                },
+                emphasis: {
+                  show: true
+                }
+              }
+            }]
+
+          })
         }
       }
     }
@@ -47,7 +88,12 @@
   display: block;
   margin:0 auto;
 }
-
+#map{
+  width: 1200px;
+  height:600px;
+  border:solid;
+  margin:0 auto;
+}
 @keyframes pulse
 {
   0% {box-shadow: 0 0 25px rgba(0,0,0,0.12),0 0 45px rgba(0,0,0,0.24);}
