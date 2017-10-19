@@ -145,5 +145,6 @@
 <style scoped>
 .router-link-active{
   border-bottom: solid 2px #f39800;
+  color:#fff;
 }
 </style>

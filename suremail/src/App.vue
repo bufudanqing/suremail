@@ -13,6 +13,7 @@ import index from './components/index.vue'
 import joinus from './components/joinus.vue'
 import more from './components/more.vue'
 import download from './components/download.vue'
+import enterprise from './components/enterprise.vue'
 
 export default {
   name: 'app',
@@ -22,7 +23,8 @@ export default {
     joinus,
     index,
     more,
-    download
+    download,
+    enterprise
   }
 }
 </script>

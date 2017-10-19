@@ -5,6 +5,7 @@ import index from '../components/index.vue'
 import joinus from '../components/joinus.vue'
 import more from '../components/more.vue'
 import download from '../components/download.vue'
+import enterprise from '../components/enterprise.vue'
 
 Vue.use(Router)
 // Vue.use(Element)
@@ -31,6 +32,11 @@ export default new Router({
       path: '/components/download',
       name: 'down',
       component: download
+    },
+    {
+      path: '/components/enterprise',
+      name: 'enterprise',
+      component: enterprise
     },
     // 重定向
     {
