@@ -9,11 +9,11 @@
           <div class="title">
             <img :src="title" />
           </div>
-          <div id="map" > 
-             
+          <div id="map" >
+
           </div>
         </div>
-        
+
     </div>
 </template>
 
@@ -33,36 +33,40 @@
         drawMap () {
           // 基于准备好的dom，初始化echarts实例
           let myChart = this.$echarts.init(document.getElementById('map'))
-          // 绘制图标
+          var myData = [{name: '北京', value: [116.46, 39.92]}, {name: '上海', value: [121.48, 31.22]}, {name: '石家庄', value: [114.48, 38.03]}, {name: '唐山', value: [118.02, 39.63]}
+          ]
           myChart.setOption({
-            // title: { text: '安邮成功案例' },
             tooltip: {
               backgroundColor: '#fff',
               textStyle: {color: '#000'}
             },
-            series: [{
-              type: 'map',
-              mapType: 'china',
+            geo: {
+              map: 'china',
               itemStyle: {
                 normal: {
                   areaColor: '#4F6A82',
                   borderColor: '#090C0F'
-                }
-              },
-              data: [
-                {name: '北京', selected: true}
-              ],
-              label: {
-                normal: {
-                  // 显示省份名称
-                  show: true,
-                  color: '#fff'
                 },
                 emphasis: {
-                  show: true
+                  areaColor: '#2a333d'
+                }
+              },
+              label: {
+                normal: {
+                  show: true,
+                  color: '#fff'
                 }
               }
-            }]
+
+            },
+            series: [
+              {
+                name: '销量',
+                type: 'scatter',
+                coordinateSystem: 'geo',
+                data: myData
+              }
+            ]
 
           })
         }
