@@ -51,9 +51,35 @@
                 <span>{{ item.e_name }}</span>
               </li>
             </ul>
+            <div class="main-parts">
+              <div class="main-parts-item" v-for="item in nav">
+                <img v-bind:src="item.pic" />
+                <div class="cover">
+
+                </div>
+                <div class="title">
+                  <div>{{ item.name }}</div>
+                  <div>{{ item.e_name }}</div>
+                </div>
+                <div class="desc">{{ item.desc }}</div>
+              </div>
+
             </div>
           </div>
         </div>
+        <div class="feature-container">
+          <div class="feature-title">
+            <img v-bind:src="title2" />
+          </div>
+          <div class="feature-wrapper">
+            <div class="feature-desc">
+               <div class="features-item" v-for="item in features">
+                 <img v-bind:src="item.pic" />
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 </template>
 <script>
@@ -71,39 +97,65 @@
           feature: '/static/img/product/feature.png',
           type: '/static/img/product/type.png',
           title1: '/static/img/product/title1.png',
-          items: [
-            {
-              name: 'UI',
-              pic: '/static/img/product/1.png',
-              alt: 'UI'
-            },
-            {
-              name: 'UI',
-              pic: '/static/img/joinus/2.png',
-              alt: 'UI'
-            },
-            {
-              name: 'UI',
-              pic: '/static/img/joinus/3.png',
-              alt: 'UI'
-            }
-          ],
+          title2: '/static/img/product/title2.png',
+          title3: '/static/img/product/title3.png',
+          pc: '/static/img/product/pc.png',
           nav: [
             {
               name: '政务安全邮',
-              e_name: 'Government security post'
+              e_name: 'Government security post',
+              pic: '/static/img/product/p1.png',
+              desc: '面向党政机关'
             },
             {
               name: '公务邮',
-              e_name: 'Business post'
+              e_name: 'Business post',
+              pic: '/static/img/product/p2.png',
+              desc: '面向大型企事业单位'
+            },
+            {
+              name: '智慧邮',
+              e_name: 'Wisdom post',
+              pic: '/static/img/product/p3.png',
+              desc: '面向智慧城市民生领域'
             },
             {
               name: '海外邮',
-              e_name: 'Overseas postal mail'
+              e_name: 'Overseas post mail',
+              pic: '/static/img/product/p4.png',
+              desc: '支持国内外邮件之间的互联互通'
             },
             {
               name: '国别邮',
-              e_name: 'Country mail'
+              e_name: 'Country mail',
+              pic: '/static/img/product/p5.png',
+              desc: '面向一带一路多语种'
+            }
+          ],
+          features: [
+            {
+              name: 'features',
+              pic: '/static/img/product/desc1.png'
+            },
+            {
+              name: 'features',
+              pic: '/static/img/product/desc2.png'
+            },
+            {
+              name: 'features',
+              pic: '/static/img/product/desc3.png'
+            },
+            {
+              name: 'features',
+              pic: '/static/img/product/desc4.png'
+            },
+            {
+              name: 'features',
+              pic: '/static/img/product/desc5.png'
+            },
+            {
+              name: '国别邮',
+              pic: '/static/img/product/desc6.png'
             }
           ]
         }
@@ -247,6 +299,124 @@
 .nav-item span:nth-child(2){
   font-size: 14px;
   letter-spacing:-2px;
+}
+.type-intro-nav{
+  display: block;
+  height: 40px;
+  margin-bottom: 50px;
+}
+.main-parts-item{
+  float: left;
+  position: relative;
+}
+.main-parts-item>img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+}
+.main-parts-item:nth-child(1){
+  margin-right: 40px;
+}
+.main-parts-item:nth-child(1),.main-parts-item:nth-child(2){
+  width:500px;
+  height: 279px;
+  margin-bottom: 40px;
+  border:solid;
+}
+.main-parts-item:nth-child(3),.main-parts-item:nth-child(4){
+  margin-right: 40px;
+}
+.main-parts-item:nth-child(3),.main-parts-item:nth-child(4),.main-parts-item:nth-child(5){
+  width:320px;
+  height: 279px;
+  border:solid;
+}
+.main-parts-item .cover{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #1f64a2;
+  transition:all .5s ease-in-out;
+}
+.main-parts-item .title,.main-parts-item .desc{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+}
+.main-parts-item .title>div:nth-child(1){
+  font-family: "思源黑体","黑体";
+  font-size: 22px;
+  color:#fff;
+}
+.main-parts-item .title>div:nth-child(2){
+  font-family: "思源黑体","黑体";
+  font-size: 18px;
+  color:#d4d2d2;
+}
+.main-parts-item .title{
+  position: absolute;
+  top:30px;
+}
+.main-parts-item .desc{
+  font-family: "思源黑体","黑体";
+  font-size: 16px;
+  color:#fcc261;
+
+  position: absolute;
+  top:100px;
+}
+.main-parts-item .cover:hover{
+  opacity: .3;
+}
+.feature-container{
+  width: 1200px;
+  height: 829px;
+  padding-top: 50px;
+  margin:0 auto;
+}
+.feature-title{
+  width: 1200px;
+  margin:0 auto;
+}
+.feature-wrapper{
+  width: 100%;
+  height: 100%;
+  border:solid;
+}
+/*.feature-wrapper .pc{
+  width: 300px;
+  height: 600px;
+  border:solid;
+  background-image: url(/static/img/product/pc.png);
+  background-position: right;
+}*/
+.feature-desc{
+  width:830px;
+  height: 600px;
+  float: right;
+  border:solid;
+}
+.features-item{
+  height: 180px;
+  float: left;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom:20px;
+  box-shadow: none;
+  transition: all .3s ease-in-out;
+}
+.features-item:hover{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+  0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.1s cubic-bezier(.25,.8,.25,1);
+}
+.features-item:nth-child(2n+1){
+  margin-right: 30px;
 }
 @keyframes pulse
 {

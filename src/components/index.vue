@@ -2,7 +2,7 @@
   <div class="top-container">
     <!-- 轮播 -->
     <div class="carousel">
-      <Carousel 
+      <Carousel
        v-model="value3"
         :autoplay="setting.autoplay"
         :autoplay-speed="setting.autoplaySpeed"
@@ -12,21 +12,21 @@
           <CarouselItem v-for="member in members">
             <img class="slider-img" v-bind:src="member.picture" />
           </CarouselItem>
-   
-      </Carousel>    
+
+      </Carousel>
     </div>
 
     <!-- 安邮介绍 -->
     <div class="intro">
        <img v-bind:src="imgUrl1" />
     </div>
-    
+
     <!-- 安邮新闻 -->
     <div class="news">
       <div class="news-container">
        <div class="news-title">
         <img v-bind:src="titleImg" />
-       </div> 
+       </div>
        <div class="news-content">
         <div class="news-slider">
           <div class="slider-container">
@@ -87,7 +87,7 @@
               </div>
               <a class="business-item-more">MORE</a>
             </div>
-            
+
           </div>
           <div class="business-item">
             <img v-bind:src="info[1].picture" /></div>
@@ -129,10 +129,10 @@
         <div class="email-title">
           <img v-bind:src="emtitle" />
         </div>
-        <div class="email-desc"> 
+        <div class="email-desc">
           <img v-bind:src="emdesc" />
         </div>
-        <div class="email-submit"> 
+        <div class="email-submit">
           <Input v-model="value" placeholder="support@suremail.cn" style="width: 300px"></Input>
           <Button type="primary">Send</Button>
         </div>
@@ -469,9 +469,10 @@
   margin-top:20px;
   padding-top:20px;
   box-shadow: none;
+  transition: all .3s ease-in-out;
 }
 .business-item-wrapper:hover{
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12),
   0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.1s cubic-bezier(.25,.8,.25,1);
 }
