@@ -6,6 +6,7 @@ import joinus from '../components/joinus.vue'
 import more from '../components/more.vue'
 import download from '../components/download.vue'
 import enterprise from '../components/enterprise.vue'
+import product from '../components/product.vue'
 
 Vue.use(Router)
 // Vue.use(Element)
@@ -37,6 +38,11 @@ export default new Router({
       path: '/components/enterprise',
       name: 'enterprise',
       component: enterprise
+    },
+    {
+      path: '/components/product',
+      name: 'product',
+      component: product
     },
     // 重定向
     {
