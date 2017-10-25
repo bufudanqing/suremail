@@ -72,10 +72,31 @@
             <img v-bind:src="title2" />
           </div>
           <div class="feature-wrapper">
+
             <div class="feature-desc">
                <div class="features-item" v-for="item in features">
                  <img v-bind:src="item.pic" />
                </div>
+            </div>
+            <div class="feature-pic">
+
+            </div>
+          </div>
+        </div>
+        <div class="solution-container">
+          <div class="solution-wrapper">
+            <div class="solution-title">
+               <img v-bind:src="title3" />
+            </div>
+            <div class="sub-banner">
+              <div class="sub-banner-item" v-for="item in banner2">
+                <img :src="item.pic" />
+              </div>
+              <ul class="sub-banner-dot">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -156,6 +177,20 @@
             {
               name: '国别邮',
               pic: '/static/img/product/desc6.png'
+            }
+          ],
+          banner2: [
+            {
+              name: '1',
+              pic: '/static/img/product/dis1.png'
+            },
+            {
+              name: '2',
+              pic: '/static/img/product/dis2.png'
+            },
+            {
+              name: '3',
+              pic: '/static/img/product/dis3.png'
             }
           ]
         }
@@ -373,9 +408,9 @@
   opacity: .3;
 }
 .feature-container{
-  width: 1200px;
+  width: 1350px;
   height: 829px;
-  padding-top: 50px;
+  padding-right: 50px;
   margin:0 auto;
 }
 .feature-title{
@@ -385,20 +420,14 @@
 .feature-wrapper{
   width: 100%;
   height: 100%;
-  border:solid;
+  padding-top: 50px;
 }
-/*.feature-wrapper .pc{
-  width: 300px;
-  height: 600px;
-  border:solid;
-  background-image: url(/static/img/product/pc.png);
-  background-position: right;
-}*/
 .feature-desc{
   width:830px;
   height: 600px;
+  margin-left: 5px;
   float: right;
-  border:solid;
+  /*border:solid;*/
 }
 .features-item{
   height: 180px;
@@ -417,6 +446,82 @@
 }
 .features-item:nth-child(2n+1){
   margin-right: 30px;
+}
+.feature-pic{
+  height: 600px;
+  width:450px;
+  /*border:solid 2px red;*/
+  float: right;
+  background-image: url(/static/img/product/pc.png);
+  background-position: right;
+}
+.solution-container{
+  width: 100%;
+  height: 980px;
+  padding-bottom: 180px;
+
+}
+.solution-wrapper{
+  width: 1100px;
+  margin:0 auto;
+  /*border:solid;*/
+}
+.solution-title{
+  width: 100%;
+  margin-bottom: 110px;
+}
+.solution-title>img{
+  display: block;
+  float: right;
+}
+.sub-banner{
+  width: 100%;
+  height: 600px;
+  /*border: solid;*/
+  position: relative;
+  top: 150px;
+}
+.sub-banner-item{
+  width: 900px;
+  height: 450px;
+  position: absolute;
+}
+.sub-banner-item:nth-child(1){
+  z-index: 3;
+  left:150px;
+  top:80px;
+}
+.sub-banner-item:nth-child(2){
+  z-index: 2;
+  left:70px;
+  top:30px;
+}
+.sub-banner-item:nth-child(3){
+  z-index: 1;
+}
+.sub-banner-item>img{
+  width: 100%;
+  height: 100%;
+}
+.sub-banner-dot{
+  display: block;
+  width: 20px;
+  height:180px;
+  /*border:solid;*/
+  position: absolute;
+  right:0;
+  bottom:0;
+}
+.sub-banner-dot>li{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-bottom: 20px;
+  border:solid 1px #1f64a2;
+  border-radius: 6px;
+}
+.sub-banner-active{
+  background-color:#1f64a2;
 }
 @keyframes pulse
 {

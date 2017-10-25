@@ -35,7 +35,7 @@
             <div class="dot"></div>
             <div class="dot"></div>
           </div>
-          <span class="news-more">more</span>
+          <router-link to="/components/news/news" class="news-more">more</router-link>
         </div>
         <div class="news-list">
          <div class="news-list-item" v-for="item in news">
@@ -138,10 +138,6 @@
         </div>
       </div>
     </div>
-    <!-- footer -->
-   <!--  <div class="index-footer">
-      <img v-bind:src="footer" />
-    </div> -->
   </div>
 </template>
 
