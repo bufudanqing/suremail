@@ -46,8 +46,8 @@ export default new Router({
       component: product
     },
     {
-      path: 'components/news/news',
-      name: 'more news',
+      path: 'components/news',
+      name: 'news',
       component: news
     },
     // 重定向
