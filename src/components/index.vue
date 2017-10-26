@@ -461,7 +461,7 @@
 }
 .business-item-wrapper{
   width: 100%;
-  height: 80%;
+  height:260px;
   margin-top:20px;
   padding-top:20px;
   box-shadow: none;
