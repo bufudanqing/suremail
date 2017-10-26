@@ -3,21 +3,6 @@
       <div class="banner">
           <img v-bind:src="banner" />
       </div>
-      <div class="banner">
-          <img v-bind:src="banner" />
-      </div>
-      <div class="banner">
-          <img v-bind:src="banner" />
-      </div>
-      <div class="banner">
-          <img v-bind:src="banner" />
-      </div>
-      <div class="banner">
-          <img v-bind:src="banner" />
-      </div>
-      <div class="banner">
-          <img v-bind:src="banner" />
-      </div>
   </div>
 </template>
 
