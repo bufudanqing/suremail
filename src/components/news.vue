@@ -117,6 +117,41 @@
             <div class="side-title">
               <img v-bind:src="title4" />
             </div>
+            <div class="side-part2-year">
+              2017
+            </div>
+            <div class="side-part2-item">
+              <Icon type="arrow-right-b"></Icon>
+              <span>2017年10月</span>
+            </div>
+            <div class="side-part2-item">
+              <Icon type="arrow-right-b"></Icon>
+              <span>2017年9月</span>
+            </div>
+            <div class="side-part2-item">
+              <Icon type="arrow-right-b"></Icon>
+              <span>2017年8月</span>
+            </div>
+            <div class="side-part2-item">
+              <Icon type="arrow-right-b"></Icon>
+              <span>2017年7月</span>
+            </div>
+            <div class="side-part2-item">
+              <Icon type="arrow-right-b"></Icon>
+              <span>2017年6月</span>
+            </div>
+            <div class="side-part2-item">
+              <Icon type="arrow-right-b"></Icon>
+              <span>2017年5月</span>
+            </div>
+            <div class="side-part2-item">
+              <Icon type="arrow-right-b"></Icon>
+              <span>2017年4月</span>
+            </div>
+            <div class="side-part2-item">
+              <Icon type="arrow-right-b"></Icon>
+              <span>2017年3月</span>
+            </div>
           </div>
         </div>
       </div>
@@ -413,7 +448,7 @@ export default {
 .side-part{
   width: 190px;
   height: 500px;
-  border:solid 1px red;
+  /*border:solid 1px red;*/
   float: right;
 }
 .side-title{
@@ -434,11 +469,26 @@ export default {
   transition: all .3s ease-in-out;
   /*border:solid 1px red;*/
 }
-.side-part1-item:hover{
+.side-part1-item:hover,
+.side-part2-item:hover
+{
   color:#0879d7;
 }
 .side-title:nth-child(2){
   margin-top: 45px;
+}
+.side-part2-year{
+  font-weight: bold;
+  font-size:18px;
+  color:#5b5b5c;
+  font-style: italic;
+}
+.side-part2-item{
+  font-family: "思源黑体","黑体";
+  font-size:16px;
+  color:#bcbcbd;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 
