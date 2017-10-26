@@ -35,7 +35,7 @@
             <div class="dot"></div>
             <div class="dot"></div>
           </div>
-          <router-link to="/components/news/news" class="news-more">more</router-link>
+          <router-link to="/components/news" class="news-more">more</router-link>
         </div>
         <div class="news-list">
          <div class="news-list-item" v-for="item in news">
