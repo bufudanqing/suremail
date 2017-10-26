@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: '新闻页面1',
+  name: '新闻页面122333',
   data () {
     return {
       banner: '/static/img/news/banner.jpg'
