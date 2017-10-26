@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: '新闻页面',
+  name: '新闻页面1',
   data () {
     return {
       banner: '/static/img/news/banner.jpg'
@@ -22,8 +22,6 @@ export default {
   width: 100%;
   height: 100%;
 
-
-  
 }
 
 </style>
