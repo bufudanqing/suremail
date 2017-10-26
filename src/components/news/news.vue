@@ -3,12 +3,27 @@
       <div class="banner">
           <img v-bind:src="banner" />
       </div>
+      <div class="banner">
+          <img v-bind:src="banner" />
+      </div>
+      <div class="banner">
+          <img v-bind:src="banner" />
+      </div>
+      <div class="banner">
+          <img v-bind:src="banner" />
+      </div>
+      <div class="banner">
+          <img v-bind:src="banner" />
+      </div>
+      <div class="banner">
+          <img v-bind:src="banner" />
+      </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: '新闻页面122333',
+  name: '新闻页面122333123asd',
   data () {
     return {
       banner: '/static/img/news/banner.jpg'
