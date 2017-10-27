@@ -33,16 +33,16 @@
                             政务安全邮客户端的介绍政务安全邮客户端的介绍
                         </div>
                         <div class="down-button">下载</div>
-                    </div> 
+                    </div>
                 </div>
-               
+
             </div>
             <div class="content-item item2">
                 <div class="content-item-wrapper">
-                    
+
                     <div class="item-desc">
                         <div class="item-title">
-                            <span>政务安全邮PC客户端Windows版</span>
+                            <span>政务安全邮手机客户端ios版</span>
                             <br>
                             <span>Business Security Post PC Client for Windows</span>
                         </div>
@@ -56,12 +56,12 @@
                             政务安全邮客户端的介绍政务安全邮客户端的介绍
                         </div>
                         <div class="down-button">下载</div>
-                    </div> 
+                    </div>
                     <div class="item-pic">
                         <img :src="item2" />
                     </div>
                 </div>
-               
+
             </div>
             <div class="content-item item3">
                 <div class="content-item-wrapper">
@@ -70,7 +70,7 @@
                     </div>
                     <div class="item-desc">
                         <div class="item-title">
-                            <span>政务安全邮PC客户端Windows版</span>
+                            <span>政务安全邮手机客户端安卓版</span>
                             <br>
                             <span>Business Security Post PC Client for Windows</span>
                         </div>
@@ -84,13 +84,13 @@
                             政务安全邮客户端的介绍政务安全邮客户端的介绍
                         </div>
                         <div class="down-button">下载</div>
-                    </div> 
+                    </div>
                 </div>
-               
+
             </div>
             <div class="content-item item4">
                 <div class="content-item-wrapper">
-                    
+
                     <div class="item-desc">
                         <div class="item-title">
                             <span>邮箱申请表单</span>
@@ -110,16 +110,16 @@
                         <div class="down-button">下载</div>
                         <div class="btn-desc">安全电子邮箱业务开通申请单</div>
                         <div class="down-button">下载</div>
-                    </div> 
+                    </div>
                     <div class="item-pic">
                         <img :src="item4" />
                     </div>
                 </div>
-               
+
             </div>
           </div>
-         
-          
+
+
         </div>
     </div>
 </template>
