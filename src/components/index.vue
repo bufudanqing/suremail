@@ -70,7 +70,7 @@
         <div class="business-title">
           <img class="business-title-content" v-bind:src="business" />
         </div>
-        <a class="business-more">more</a>
+        <router-link to="/components/information"  class="business-more">more</router-link>
         <div class="business-wrapper">
           <div class="business-item">
             <img v-bind:src="info[0].picture" />

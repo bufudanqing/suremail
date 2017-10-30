@@ -12,7 +12,7 @@
             <div class="par1-item">
               <img :src= "news1" />
               <div class="title">
-                 <span>手机中存在的安全隐患，我们应该怎样避免</span>
+                 <router-link to="components/news/newsdetail.vue">手机中存在的安全隐患，我们应该怎样避免</router-link>
                  <span>2017.10.12</span>
               </div>
             </div>

@@ -8,6 +8,7 @@ import download from '../components/download.vue'
 import enterprise from '../components/enterprise.vue'
 import product from '../components/product.vue'
 import news from '../components/news.vue'
+import information from '../components/information.vue'
 
 Vue.use(Router)
 // Vue.use(Element)
@@ -49,6 +50,11 @@ export default new Router({
       path: '/components/news',
       name: 'news',
       component: news
+    },
+    {
+      path: '/components/information',
+      name: 'info',
+      component: information
     },
     // 重定向
     {
