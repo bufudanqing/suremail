@@ -53,17 +53,16 @@
               </div>
               <div class="part2-item-desc">
                 <div class="part2-item-date">
-                  {{ item.date }}
+                  <span>{{ item.date }}</span>
+                  <span>由安全资讯中心发布</span>
                 </div>
                 <div class="part2-item-summary">
                   <div class="part2-item-title">Suremail安全邮件网页端2.0</div>
                   <div class="part2-item-summary">本次版本发布在网页端。
                     优化了电子邮件收发和个人通讯录功能。本次版本发布在网页端。
                       优化了电子邮件收发和个人通讯录功能。本次版本发布在网页端。
-                        优化了电子邮件收发和个人通讯录功能。本次版本发布在网页端。
-                          优化了电子邮件收发和个人通讯录功能。本次版本发布在网页端。
-                            优化了电子邮件收发和个人通讯录功能。本次版本发布在网页端。
-                              优化了电子邮件收发和个人通讯录功能。</div>
+                        优化了电子邮件收发和个人通讯录功能。
+                        </div>
                   <div class="part2-item-more">更多详情</div>
                 </div>
               </div>
@@ -80,42 +79,9 @@
           </div>
         </div>
         <div class="side-part">
-          <div class="side-part1">
-            <div class="side-title">
-              <img v-bind:src="title3" />
-            </div>
-            <div class="side-part1-item">
-              <Icon type="arrow-right-b"></Icon>
-              <span>邮件安全存在的五大威胁...</span>
-            </div>
-            <div class="side-part1-item">
-              <Icon type="arrow-right-b"></Icon>
-              <span>邮件安全存在的五大威胁...</span>
-            </div>
-            <div class="side-part1-item">
-              <Icon type="arrow-right-b"></Icon>
-              <span>邮件安全存在的五大威胁...</span>
-            </div>
-            <div class="side-part1-item">
-              <Icon type="arrow-right-b"></Icon>
-              <span>邮件安全存在的五大威胁...</span>
-            </div>
-            <div class="side-part1-item">
-              <Icon type="arrow-right-b"></Icon>
-              <span>邮件安全存在的五大威胁...</span>
-            </div>
-            <div class="side-part1-item">
-              <Icon type="arrow-right-b"></Icon>
-              <span>邮件安全存在的五大威胁...</span>
-            </div>
-            <div class="side-part1-item">
-              <Icon type="arrow-right-b"></Icon>
-              <span>邮件安全存在的五大威胁...</span>
-            </div>
-          </div>
           <div class="side-part2">
             <div class="side-title">
-              <img v-bind:src="title4" />
+              <img v-bind:src="title3" />
             </div>
             <div class="side-part2-year">
               2017
@@ -282,9 +248,9 @@ export default {
   height: 100%;
 }
 .par1-item:nth-child(1){
-  width: 632px;
+  width: 627px;
   height: 456px;
-  margin-right: 22px;
+  margin-right: 28px;
   /*border:solid 1px red;*/
   float: right;
 }
@@ -402,20 +368,44 @@ export default {
   width: 100%;
   height: 100%;
 }
+.part2-item:nth-child(2),
+.part2-item:nth-child(3),
+.part2-item:nth-child(11),
+.part2-item:nth-child(12)
+{
+  width: 460px;
+  height: 450px;
+}
+.part2-item:nth-child(2),
+.part2-item:nth-child(11){
+  margin-right: 29px;
+}
 .part2-item{
   margin-bottom: 45px;
   float: left;
   /*border:solid 1px red;*/
 }
-.par2-item:nth-child(1)
+.part2-item:nth-child(4),
+.part2-item:nth-child(5),
+.part2-item:nth-child(6),
+.part2-item:nth-child(7),
+.part2-item:nth-child(8),
+.part2-item:nth-child(9)
 {
-  width: 400px;
-  height: 250px;
+  width:291px;
+  height: 450px;
+  margin-right: 35px;
 }
-.par2-item-bg{
-  width: 100%;
-  height: 100%;
-  margin-right: 18px;
+.part2-item:nth-child(10)
+{
+  width:945px;
+  height: 600px;
+}
+.part2-item:nth-child(2) .par2-item-bg,
+.part2-item:nth-child(3) .par2-item-bg
+{
+  width: 460px;
+  height: 270px;
   /*float: left;*/
 }
 .par2-item-bg>img{
@@ -425,23 +415,29 @@ export default {
 .part2-item-desc{
   /*float: left;*/
   height: 100%;
-  width:200px;
+  width:100%;
   /*border:solid 1px green;*/
 }
 .part2-item-date{
-  width: 142px;
-  height: 35px;
-  background-color: #000;
-  line-height: 35px;
-  text-align: center;
+  width: 100%;
+  height: 22px;
   font-family: "黑体";
   font-size: 16px;
-  color:#fff;
+  color:#868787;
+  margin-top: 25px;
+}
+.part2-item-date>span:nth-child(1){
+  display: inline-block;
+  float: left;
+}
+.part2-item-date>span:nth-child(2){
+  display: inline-block;
+  float: right;
 }
 .part2-item-title{
   font-size: 16px;
   font-family: "思源黑体","黑体";
-  color: #555556;
+  color: #101010;
   display: block;
   margin-top: 10px;
   margin-bottom: 5px;
