@@ -2,7 +2,7 @@
 
     <!-- footer -->
     <div class="index-footer">
-      <img v-bind:src="footer" />
+      <img v-bind:src="index" @click = "changeFooter" />
     </div>
 </template>
 
@@ -16,67 +16,13 @@
     name: 'index',
     data () {
       return {
-        imgUrl: '/static/img/logo-mail.png',
-        imgUrl1: '/static/img/intro.png',
-        titleImg: '/static/img/news-title.png',
-        footer: '/static/img/index-footer.png',
-        business: '/static/img/business-title.png',
-        emtitle: '/static/img/emtitle.png',
-        emdesc: '/static/img/email_desc.png',
-        members: [
-          {
-            name: 'L',
-            picture: '/static/img/banner/banner01.png',
-            alt: 'suremail banner'
-          },
-          {
-            name: 'L',
-            picture: '/static/img/banner/banner02.jpg',
-            alt: 'suremail banner'
-          },
-          {
-            name: 'L',
-            picture: '/static/img/banner/banner03.jpg',
-            alt: 'suremail banner'
-          },
-          {
-            name: 'L',
-            picture: '/static/img/banner/banner04.jpg',
-            alt: 'suremail banner'
-          }
-        ],
-        news: [
-          {
-            picture: '/static/img/news/news1.png',
-            alt: 'news background image'
-          },
-          {
-            picture: '/static/img/news/news2.png',
-            alt: 'news background image'
-          },
-          {
-            picture: '/static/img/news/news3.png',
-            alt: 'news background image'
-          },
-          {
-            picture: '/static/img/news/news4.png',
-            alt: 'news background image'
-          }
-        ],
-        info: [
-          {
-            picture: '/static/img/info/info1.png',
-            alt: 'info background image'
-          },
-          {
-            picture: '/static/img/info/info2.png',
-            alt: 'info background image'
-          },
-          {
-            picture: '/static/img/info/info3.png',
-            alt: 'info background image'
-          }
-        ],
+        index: '/static/img/footer/index.png',
+        more: '/static/img/footer/index.png',
+        product: '/static/img/footer/index.png',
+        information: '/static/img/footer/index.png',
+        news: '/static/img/footer/index.png',
+        down: '/static/img/footer/index.png',
+        enterprise: '/static/img/footer/enterprise.png',
         value3: 0,
         setting: {
           autoplay: true,
@@ -90,6 +36,11 @@
     },
     components: {
       Carousel
+    },
+    methods: {
+      changeFooter: function () {
+        console.log(this.$router.name)
+      }
     }
   }
 </script>
@@ -100,6 +51,6 @@
 .index-footer>img{
   width: 100%;
   height: 100%;
-  
+
 }
 </style>

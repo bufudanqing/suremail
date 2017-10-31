@@ -27,7 +27,7 @@
             <router-link to="/components/joinus">加入我们</router-link>
           </li>
         </ul>
-        <ul class="nav-wrapper" v-else-if="$route.name !== ('information') ">
+        <!-- <ul class="nav-wrapper" v-else-if="$route.name !== ('information') ">
           <li>
             <router-link to="/components/index">首页</router-link>
           </li>
@@ -46,7 +46,7 @@
           <li>
             <router-link to="/components/joinus">加入我们</router-link>
           </li>
-        </ul>
+        </ul> -->
         <ul class="nav-wrapper" v-else>
           <li>
             <router-link to="/components/index">返回首页
@@ -101,6 +101,9 @@
 <style scoped>
 .router-link-active{
   border-bottom: solid 2px #f39800;
+  color:#fff;
+}
+.ivu-icon{
   color:#fff;
 }
 </style>
