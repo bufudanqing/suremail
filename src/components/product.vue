@@ -34,7 +34,7 @@
           <img :src="gap" />
           <div class="gap-container">
              <div class="icon-wrapper">
-                <div class="icon-item item1" v-on:click="wave" v-bind:style="{backgroundImage: 'url(' + type + ')'}"></div>
+                <div class="icon-item item1"  v-bind:style="{backgroundImage: 'url(' + type + ')'}"></div>
                 <div class="icon-item item2" v-bind:style="{backgroundImage: 'url(' + feature + ')'}"></div>
                 <div class="icon-item item3" v-bind:style="{backgroundImage: 'url(' + solution + ')'}"></div>
              </div>
@@ -107,7 +107,7 @@
     // import Waves from '../js/waves.js'
     // Vue.use(VueWaves)
     export default {
-      name: 'Suremail Product',
+      name: 'Product',
       data () {
         return {
           banner: '/static/img/product/banner.png',

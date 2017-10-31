@@ -2,7 +2,7 @@
 
     <!-- footer -->
     <div class="index-footer">
-      <img v-bind:src="index" @click = "changeFooter" />
+      <img v-bind:src="index" />
     </div>
 </template>
 
@@ -34,13 +34,15 @@
         scrolled: false
       }
     },
+    // route: {
+    //   data () {
+    //     return {
+    //       console.info(111)
+    //     }
+    //   }
+    // },
     components: {
       Carousel
-    },
-    methods: {
-      changeFooter: function () {
-        console.log(this.$router.name)
-      }
     }
   }
 </script>
