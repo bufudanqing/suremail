@@ -126,7 +126,7 @@
 
 <script>
 export default {
-  name: '新闻页面',
+  name: 'information',
   data () {
     return {
       banner: '/static/img/information/banner.png',

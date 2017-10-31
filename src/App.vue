@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <navigation></navigation>
+    <!-- <navigation1></navigation1> -->
     <router-view/>
     <myfooter></myfooter>
   </div>
@@ -8,6 +9,7 @@
 
 <script>
 import navigation from './components/navigation.vue'
+import navigation1 from './components/navigation1.vue'
 import myfooter from './components/myfooter.vue'
 import index from './components/index.vue'
 import joinus from './components/joinus.vue'
@@ -19,6 +21,7 @@ export default {
   name: 'app',
   components: {
     navigation,
+    navigation1,
     myfooter,
     joinus,
     index,

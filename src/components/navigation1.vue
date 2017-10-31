@@ -7,47 +7,7 @@
         <img v-bind:src="imgUrl" />
         <a>北京国信安邮科技有限公司官网</a>
         </div>
-        <ul class="nav-wrapper" v-if="$route.name !== ('news') ">
-          <li>
-            <router-link to="/components/index">首页</router-link>
-          </li>
-          <li>
-            <router-link to="/components/more">走进安邮</router-link>
-          </li>
-          <li>
-            <router-link to="/components/product">安邮产品</router-link>
-          </li>
-          <li>
-            <router-link to="/components/enterprise">成功案例</router-link>
-          </li>
-          <li>
-            <router-link to="/components/download">下载</router-link>
-          </li>
-          <li>
-            <router-link to="/components/joinus">加入我们</router-link>
-          </li>
-        </ul>
-        <ul class="nav-wrapper" v-else-if="$route.name !== ('information') ">
-          <li>
-            <router-link to="/components/index">首页</router-link>
-          </li>
-          <li>
-            <router-link to="/components/more">走进安邮</router-link>
-          </li>
-          <li>
-            <router-link to="/components/product">安邮产品</router-link>
-          </li>
-          <li>
-            <router-link to="/components/enterprise">成功案例</router-link>
-          </li>
-          <li>
-            <router-link to="/components/download">下载</router-link>
-          </li>
-          <li>
-            <router-link to="/components/joinus">加入我们</router-link>
-          </li>
-        </ul>
-        <ul class="nav-wrapper" v-else>
+        <ul class="nav-wrapper">
           <li>
             <router-link to="/components/index">返回首页
               <Icon type="arrow-return-left"></Icon></router-link>
@@ -100,7 +60,10 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .router-link-active{
-  border-bottom: solid 2px #f39800;
+  /*border-bottom: solid 2px #f39800;*/
+  /*color:#fff;*/
+}
+.ivu-icon{
   color:#fff;
 }
 </style>

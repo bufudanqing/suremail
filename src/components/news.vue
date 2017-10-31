@@ -160,7 +160,7 @@
 
 <script>
 export default {
-  name: '新闻页面',
+  name: 'news',
   data () {
     return {
       banner: '/static/img/news/banner.png',
