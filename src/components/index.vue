@@ -28,16 +28,21 @@
         <img v-bind:src="titleImg" />
        </div>
        <div class="news-content">
-        <div class="news-slider">
-          <div class="slider-container">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+        <!-- <div class="news-slider"> -->
+
+          <div class="slider-container" id="nav_slide">
+            <label for="i1" class="dot" id="dot1"></label>
+            <label for="i2" class="dot" id="dot2"></label>
+            <label for="i3" class="dot" id="dot3"></label>
+            <label for="i4" class="dot" id="dot4"></label>
           </div>
           <router-link to="/components/news" class="news-more">more</router-link>
-        </div>
-        <div class="news-list">
+        <!-- </div> -->
+        <input type="radio" name="news" id="i1" checked>
+        <input type="radio" name="news" id="i2">
+        <input type="radio" name="news" id="i3">
+        <input type="radio" name="news" id="i4">
+        <div class="news-list" id="one">
          <div class="news-list-item" v-for="item in news">
           <div class="item-wrapper">
             <div class="news-bg">
@@ -60,7 +65,75 @@
           </div>
          </div>
         </div>
-
+        <div class="news-list" id="two">
+         <div class="news-list-item" v-for="item in news">
+          <div class="item-wrapper">
+            <div class="news-bg">
+              <img v-bind:src="item.picture" />
+              <div class="news-footer">
+                <span>2017-10-13</span>
+                <div class="band">
+                  <div class="band-text">
+                    <span>安邮新闻</span><span>消息</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- news title and summary -->
+            <div class="title-summary">
+              <a class="item-title">Suremail安全邮件网页端2.0</a>
+              <a class="item-summary">本次版本发布在网页端。优化了电子邮件收发和个人通讯录功能。加密邮件、数字签名功能。</a>
+              <a class="item-more">更多详情</a>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="news-list" id="three">
+         <div class="news-list-item" v-for="item in news">
+          <div class="item-wrapper">
+            <div class="news-bg">
+              <img v-bind:src="item.picture" />
+              <div class="news-footer">
+                <span>2017-10-14</span>
+                <div class="band">
+                  <div class="band-text">
+                    <span>安邮新闻</span><span>消息</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- news title and summary -->
+            <div class="title-summary">
+              <a class="item-title">Suremail安全邮件网页端2.0</a>
+              <a class="item-summary">本次版本发布在网页端。优化了电子邮件收发和个人通讯录功能。加密邮件、数字签名功能。</a>
+              <a class="item-more">更多详情</a>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="news-list" id="four">
+         <div class="news-list-item" v-for="item in news">
+          <div class="item-wrapper">
+            <div class="news-bg">
+              <img v-bind:src="item.picture" />
+              <div class="news-footer">
+                <span>2017-10-15</span>
+                <div class="band">
+                  <div class="band-text">
+                    <span>安邮新闻</span><span>消息</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- news title and summary -->
+            <div class="title-summary">
+              <a class="item-title">Suremail安全邮件网页端2.0</a>
+              <a class="item-summary">本次版本发布在网页端。优化了电子邮件收发和个人通讯录功能。加密邮件、数字签名功能。</a>
+              <a class="item-more">更多详情</a>
+            </div>
+          </div>
+         </div>
+        </div>
        </div>
       </div>
     </div>
@@ -133,7 +206,7 @@
           <img v-bind:src="emdesc" />
         </div>
         <div class="email-submit">
-          <Input v-model="value" placeholder="support@suremail.cn" style="width: 300px"></Input>
+          <Input  placeholder="support@suremail.cn" style="width: 300px"></Input>
           <Button type="primary">Send</Button>
         </div>
       </div>
@@ -225,6 +298,30 @@
     },
     components: {
       Carousel
+    },
+    watch: {
+      '$route' (to, from) {
+        console.log('route switched')
+      }
+    },
+    beforeRouteLeave (to, from, next) {
+      let position = window.scrollY
+      this.$store.commit('SAVE_POSITION', position)
+      console.log(position)
+      next()
+      // const answer = window.confirm('Do you really want to leave? you have unsaved changes!')
+      // if (answer) {
+      //   next()
+      // } else {
+      //   next(false)
+      // }
+    },
+    mounted () {
+      this.$nextTick(function () {
+        // 返回页面取出来
+        let position = this.$store.state.position
+        window.scroll(0, position)
+      })
     }
   }
 </script>
@@ -270,6 +367,11 @@
   text-align: right;
   margin-top: 40px;
   padding-right: 15px;
+
+  position:relative;
+}
+.news-content input{
+  display: none;
 }
 .slider-container{
   display: inline-block;
@@ -312,6 +414,60 @@
   height: 450px;
   margin-top:25px;
   display: flex;
+  position: absolute;
+  z-index: -1;
+}
+ #nav_slide .dot:hover {
+  background: #795548;
+  border:none;
+}
+
+#i1:checked ~ #nav_slide #dot1 {
+    background: #795548;
+}
+
+#i2:checked ~ #nav_slide #dot2 {
+  background: #F44336;
+}
+
+#i3:checked ~ #nav_slide #dot3 {
+  background: #2196F3;
+}
+
+#i4:checked ~ #nav_slide #dot4 {
+  background: #4CAF50;
+}
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four {
+  z-index: 9;
+  animation: scroll 1s ease-in-out;
+}
+
+#i1:checked ~ #nav_slide #dot1 {
+  background: #795548;
+}
+
+#i2:checked ~ #nav_slide #dot2 {
+  background: #F44336;
+}
+
+#i3:checked ~ #nav_slide #dot3 {
+  background: #2196F3;
+}
+
+#i4:checked ~ #nav_slide #dot4 {
+  background: #4CAF50;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .news-list-item{
   flex: 1;

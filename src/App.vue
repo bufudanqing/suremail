@@ -2,7 +2,9 @@
   <div id="app">
     <navigation></navigation>
     <!-- <navigation1></navigation1> -->
+    <!-- <keep-alive> -->
     <router-view/>
+    <!-- </keep-alive> -->
     <myfooter></myfooter>
   </div>
 </template>

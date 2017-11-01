@@ -28,7 +28,7 @@
               <img :src="codedesc" />
             </div>
           </div>
-          
+
         </div>
     </div>
 </template>
@@ -77,17 +77,34 @@
   padding-top:100px;
   margin: 0 auto;
 }
+.join-content{
+  width: 1100px;
+  height: 1900px;
+  padding-left: 50px;
+  /*border:solid;*/
+}
+.info-item{
+  width: 700px;
+height: 500px;
+margin:0 auto;
+}
 .join-title>img{
   display: block;
   margin:0 auto;
 }
+.side{
+  height: 1800px;
+  width: 40px;
+}
 .side>img{
-   width:56px;
+   height: 100%;
+   width: 100%;
    margin-right:10px;
 }
 .employ-info{
-  width:1100px;
+  width:1000px;
   margin-top:80px;
+  margin: 0 auto;
 }
 .side,.employ-info{
   float: left;

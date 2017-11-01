@@ -19,7 +19,11 @@ export default new Router({
     {
       path: '/components/index',
       name: 'index',
-      component: index
+      component: index,
+      meta: {
+        title: 'index',
+        keepAlive: true
+      }
     },
     {
       path: '/components/joinus',
@@ -64,9 +68,11 @@ export default new Router({
   ],
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
+      console.log(savedPosition)
       return savedPosition
     } else {
       return {x: 0, y: 0}
+      // return {x: 0, y: to.meta.savedPosition || 0}
     }
   }
 })

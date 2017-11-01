@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import echarts from 'echarts'
 import iView from 'iview'
+import store from './../store/index'
 // import VueWaves from 'vue-waves'
 import 'iview/dist/styles/iview.css'    // 使用 CSS
 require('./assets/css/navigation.css')
@@ -15,6 +16,7 @@ Vue.prototype.$echarts = echarts
 
 // Vue.use(VueRouter)
 Vue.use(iView)
+Vue.use(store)
 // Vue.use(VueWaves)
 
 Vue.config.productionTip = false
@@ -28,5 +30,6 @@ new Vue({
   el: '#app',
   router,  // 注入到根实例中
   template: '<App/>',
-  components: { App }
+  components: { App },
+  store
 })
