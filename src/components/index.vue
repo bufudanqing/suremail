@@ -38,102 +38,102 @@
           </div>
           <router-link to="/components/news" class="news-more">more</router-link>
         <!-- </div> -->
-        <input type="radio" name="news" id="i1" checked>
-        <input type="radio" name="news" id="i2">
-        <input type="radio" name="news" id="i3">
-        <input type="radio" name="news" id="i4">
-        <div class="news-list" id="one">
-         <div class="news-list-item" v-for="item in news">
-          <div class="item-wrapper">
-            <div class="news-bg">
-              <img v-bind:src="item.picture" />
-              <div class="news-footer">
-                <span>2017-10-12</span>
-                <div class="band">
-                  <div class="band-text">
-                    <span>安邮新闻</span><span>消息</span>
+          <input type="radio" name="news" id="i1" checked>
+          <input type="radio" name="news" id="i2">
+          <input type="radio" name="news" id="i3">
+          <input type="radio" name="news" id="i4">
+          <div class="news-list" id="one">
+           <div class="news-list-item" v-for="item in news">
+            <div class="item-wrapper">
+              <div class="news-bg">
+                <img v-bind:src="item.picture" />
+                <div class="news-footer">
+                  <span>2017-10-12</span>
+                  <div class="band">
+                    <div class="band-text">
+                      <span>安邮新闻</span><span>消息</span>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- news title and summary -->
+              <div class="title-summary">
+                <a class="item-title">Suremail安全邮件网页端2.0</a>
+                <a class="item-summary">本次版本发布在网页端。优化了电子邮件收发和个人通讯录功能。加密邮件、数字签名功能。</a>
+                <a class="item-more">更多详情</a>
+              </div>
             </div>
-            <!-- news title and summary -->
-            <div class="title-summary">
-              <a class="item-title">Suremail安全邮件网页端2.0</a>
-              <a class="item-summary">本次版本发布在网页端。优化了电子邮件收发和个人通讯录功能。加密邮件、数字签名功能。</a>
-              <a class="item-more">更多详情</a>
-            </div>
+           </div>
           </div>
-         </div>
-        </div>
-        <div class="news-list" id="two">
-         <div class="news-list-item" v-for="item in news">
-          <div class="item-wrapper">
-            <div class="news-bg">
-              <img v-bind:src="item.picture" />
-              <div class="news-footer">
-                <span>2017-10-13</span>
-                <div class="band">
-                  <div class="band-text">
-                    <span>安邮新闻</span><span>消息</span>
+          <div class="news-list" id="two">
+           <div class="news-list-item" v-for="item in news">
+            <div class="item-wrapper">
+              <div class="news-bg">
+                <img v-bind:src="item.picture" />
+                <div class="news-footer">
+                  <span>2017-10-13</span>
+                  <div class="band">
+                    <div class="band-text">
+                      <span>安邮新闻</span><span>消息</span>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- news title and summary -->
+              <div class="title-summary">
+                <a class="item-title">Suremail安全邮件网页端2.0</a>
+                <a class="item-summary">本次版本发布在网页端。优化了电子邮件收发和个人通讯录功能。加密邮件、数字签名功能。</a>
+                <a class="item-more">更多详情</a>
+              </div>
             </div>
-            <!-- news title and summary -->
-            <div class="title-summary">
-              <a class="item-title">Suremail安全邮件网页端2.0</a>
-              <a class="item-summary">本次版本发布在网页端。优化了电子邮件收发和个人通讯录功能。加密邮件、数字签名功能。</a>
-              <a class="item-more">更多详情</a>
-            </div>
+           </div>
           </div>
-         </div>
-        </div>
-        <div class="news-list" id="three">
-         <div class="news-list-item" v-for="item in news">
-          <div class="item-wrapper">
-            <div class="news-bg">
-              <img v-bind:src="item.picture" />
-              <div class="news-footer">
-                <span>2017-10-14</span>
-                <div class="band">
-                  <div class="band-text">
-                    <span>安邮新闻</span><span>消息</span>
+          <div class="news-list" id="three">
+           <div class="news-list-item" v-for="item in news">
+            <div class="item-wrapper">
+              <div class="news-bg">
+                <img v-bind:src="item.picture" />
+                <div class="news-footer">
+                  <span>2017-10-14</span>
+                  <div class="band">
+                    <div class="band-text">
+                      <span>安邮新闻</span><span>消息</span>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- news title and summary -->
+              <div class="title-summary">
+                <a class="item-title">Suremail安全邮件网页端2.0</a>
+                <a class="item-summary">本次版本发布在网页端。优化了电子邮件收发和个人通讯录功能。加密邮件、数字签名功能。</a>
+                <a class="item-more">更多详情</a>
+              </div>
             </div>
-            <!-- news title and summary -->
-            <div class="title-summary">
-              <a class="item-title">Suremail安全邮件网页端2.0</a>
-              <a class="item-summary">本次版本发布在网页端。优化了电子邮件收发和个人通讯录功能。加密邮件、数字签名功能。</a>
-              <a class="item-more">更多详情</a>
-            </div>
+           </div>
           </div>
-         </div>
-        </div>
-        <div class="news-list" id="four">
-         <div class="news-list-item" v-for="item in news">
-          <div class="item-wrapper">
-            <div class="news-bg">
-              <img v-bind:src="item.picture" />
-              <div class="news-footer">
-                <span>2017-10-15</span>
-                <div class="band">
-                  <div class="band-text">
-                    <span>安邮新闻</span><span>消息</span>
+          <div class="news-list" id="four">
+           <div class="news-list-item" v-for="item in news">
+            <div class="item-wrapper">
+              <div class="news-bg">
+                <img v-bind:src="item.picture" />
+                <div class="news-footer">
+                  <span>2017-10-15</span>
+                  <div class="band">
+                    <div class="band-text">
+                      <span>安邮新闻</span><span>消息</span>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- news title and summary -->
+              <div class="title-summary">
+                <a class="item-title">Suremail安全邮件网页端2.0</a>
+                <a class="item-summary">本次版本发布在网页端。优化了电子邮件收发和个人通讯录功能。加密邮件、数字签名功能。</a>
+                <a class="item-more">更多详情</a>
+              </div>
             </div>
-            <!-- news title and summary -->
-            <div class="title-summary">
-              <a class="item-title">Suremail安全邮件网页端2.0</a>
-              <a class="item-summary">本次版本发布在网页端。优化了电子邮件收发和个人通讯录功能。加密邮件、数字签名功能。</a>
-              <a class="item-more">更多详情</a>
-            </div>
+           </div>
           </div>
-         </div>
-        </div>
        </div>
       </div>
     </div>
