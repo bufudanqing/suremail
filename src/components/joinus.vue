@@ -72,7 +72,7 @@
   height: 100%;
 }
 .main{
-  height:3800px;
+  height:2900px;
   width:1200px;
   padding-top:100px;
   margin: 0 auto;

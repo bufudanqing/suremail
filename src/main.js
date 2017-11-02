@@ -10,6 +10,7 @@ import store from './../store/index'
 import 'iview/dist/styles/iview.css'    // 使用 CSS
 require('./assets/css/navigation.css')
 require('echarts/map/js/china.js')
+
 Vue.prototype.$echarts = echarts
 // var Vue = require('vue')
 // var VueWaves = require('vue-waves')
@@ -17,6 +18,7 @@ Vue.prototype.$echarts = echarts
 // Vue.use(VueRouter)
 Vue.use(iView)
 Vue.use(store)
+// var VueWaves = require('vue-waves')
 // Vue.use(VueWaves)
 
 Vue.config.productionTip = false
