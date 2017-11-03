@@ -34,7 +34,7 @@
           <img :src="gap" />
           <div class="gap-container">
              <div class="icon-wrapper">
-                <div class="icon-item item1"  v-bind:style="{backgroundImage: 'url(' + type + ')'}"></div>
+                <div class="icon-item item1" v-bind:style="{backgroundImage: 'url(' + type + ')'}"></div>
                 <div class="icon-item item2" v-bind:style="{backgroundImage: 'url(' + feature + ')'}"></div>
                 <div class="icon-item item3" v-bind:style="{backgroundImage: 'url(' + solution + ')'}"></div>
              </div>
@@ -92,7 +92,7 @@
               <!-- <input type="radio" name="news" id="i1" checked>
               <input type="radio" name="news" id="i2">
               <input type="radio" name="news" id="i3"> -->
-              <div class="sub-banner-item" v-for="(item,index) in banner2" v-bind:id= "'item_'+index">
+              <div class="sub-banner-item" v-for="(item,index) in banner2" :ref= "item.name">
                 <img :src="item.pic" />
               </div>
               <ul class="sub-banner-dot">
@@ -184,31 +184,26 @@
           ],
           banner2: [
             {
-              name: '1',
+              name: 'dis1',
               pic: '/static/img/product/dis1.png'
             },
             {
-              name: '2',
+              name: 'dis2',
               pic: '/static/img/product/dis2.png'
             },
             {
-              name: '3',
+              name: 'dis3',
               pic: '/static/img/product/dis3.png'
             }
           ]
         }
       },
       mounted () {
-        this.autoLoop()
+        this.startSlider()
+        console.log(this.$refs.dis1)
       },
       methods: {
-        autoLoop: function () {
-          setInterval(() => {
-            this.loop()
-          }, 500)
-        },
-        loop: function () {
-          console.log('func B')
+        startSlider: function () {
         }
       }
     }

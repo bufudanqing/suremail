@@ -350,7 +350,7 @@
 
 /*新闻*/
 .news{
-  height: 678px;
+  height: 800px;
   background-color:#edebeb;
   padding-top: 70px;
 
