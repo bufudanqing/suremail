@@ -32,7 +32,7 @@
   /*border:solid 1px red;*/
   background-color: rgba(254,242,205,0.6);
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   transition: all .3s ease-in-out;
 }
 .nav-wrapper{

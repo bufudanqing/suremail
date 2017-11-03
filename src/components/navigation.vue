@@ -5,7 +5,7 @@
       <div class="navbar-wrapper" ref="myNavWrapper">
         <div class="logo">
         <img v-bind:src="imgUrl" />
-        <a>北京国信安邮科技有限公司官网</a>
+        <!-- <a>北京国信安邮科技有限公司官网</a> -->
         </div>
         <ul class="nav-wrapper" v-if="$route.name !== ('news') ">
           <li>
@@ -68,7 +68,7 @@
     name: 'index',
     data () {
       return {
-        imgUrl: '/static/img/logo-mail.png'
+        imgUrl: '/static/img/logo.png'
       }
     },
     components: {

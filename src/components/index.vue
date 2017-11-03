@@ -30,13 +30,7 @@
        <div class="news-content">
         <!-- <div class="news-slider"> -->
 
-          <div class="slider-container" id="nav_slide">
-            <label for="i1" class="dot" id="dot1"></label>
-            <label for="i2" class="dot" id="dot2"></label>
-            <label for="i3" class="dot" id="dot3"></label>
-            <label for="i4" class="dot" id="dot4"></label>
-          </div>
-          <router-link to="/components/news" class="news-more">more</router-link>
+
         <!-- </div> -->
           <input type="radio" name="news" id="i1" checked>
           <input type="radio" name="news" id="i2">
@@ -133,6 +127,13 @@
               </div>
             </div>
            </div>
+          </div>
+          <router-link to="/components/news" class="news-more">more</router-link>
+          <div class="slider-container" id="nav_slide">
+            <label for="i1" class="dot" id="dot1"></label>
+            <label for="i2" class="dot" id="dot2"></label>
+            <label for="i3" class="dot" id="dot3"></label>
+            <label for="i4" class="dot" id="dot4"></label>
           </div>
        </div>
       </div>
@@ -358,7 +359,9 @@
   width:1200px;
   margin: 0 auto;
 }
-
+.news-title{
+  margin-bottom: 80px;
+}
 .news-title>img{
   display: block;
   margin: 0 auto;
@@ -375,6 +378,8 @@
 }
 .slider-container{
   display: inline-block;
+  float: right;
+  padding-top: 5px;
 }
 .slider-container>.dot {
   float: left;
@@ -400,10 +405,11 @@
     color: #7c7d7d;
     line-height: 20px;
     margin-left: 5px;
-    position: relative;
-    bottom: 3px;
     cursor: pointer;
     transition: all .3s ease-in-out;
+
+    float: right;
+    margin-right: 60px;
 }
 .news-more:hover{
     background-color: #7c7d7d;
@@ -412,7 +418,7 @@
 }
 .news-list{
   height: 450px;
-  margin-top:25px;
+  margin-top:70px;
   display: flex;
   position: absolute;
   z-index: -1;
@@ -425,18 +431,30 @@
 #i1:checked ~ #nav_slide #dot1 {
     background: #795548;
 }
-
 #i2:checked ~ #nav_slide #dot2 {
-  background: #F44336;
+  background: #795548;
 }
 
 #i3:checked ~ #nav_slide #dot3 {
-  background: #2196F3;
+  background: #795548;
 }
 
 #i4:checked ~ #nav_slide #dot4 {
-  background: #4CAF50;
+  background: #795548;
 }
+/*#i1:checked+#nav_slide #dot1{
+  background: #795548;
+}
+#i2:checked+#nav_slide #dot2{
+  background: #795548;
+}
+#i3:checked+#nav_slide #dot3{
+  background: #795548;
+}
+#i4:checked+#nav_slide #dot4{
+  background: #795548;
+}*/
+
 #i1:checked ~ #one,
 #i2:checked ~ #two,
 #i3:checked ~ #three,
@@ -450,15 +468,15 @@
 }
 
 #i2:checked ~ #nav_slide #dot2 {
-  background: #F44336;
+  background: #795548;
 }
 
 #i3:checked ~ #nav_slide #dot3 {
-  background: #2196F3;
+  background: #795548;
 }
 
 #i4:checked ~ #nav_slide #dot4 {
-  background: #4CAF50;
+  background: #795548;
 }
 
 @keyframes scroll {
