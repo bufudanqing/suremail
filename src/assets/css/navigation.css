@@ -21,7 +21,7 @@
   font-size:18px;
   color:#1f64a2;
   font-weight:500;
-  /*font-family: "ºÚÌå";*/
+  /*font-family: "ï¿½ï¿½ï¿½ï¿½";*/
   font-family: "Microsoft yahei";
   display: inline-block;
   margin-left: 5px;
@@ -47,7 +47,7 @@
   padding: 0 20px;
   height:30px;
   vertical-align: middle;
- 
+
 
 }
 
@@ -60,7 +60,7 @@
   color:#1f64a2;
   font-weight:500;
   display: block;
-  font-family: "Microsoft yahei";
+  font-family: "æ±‰ä»ªæ——é»‘-65ç®€","Microsoft yahei";
 
   border-bottom:solid 2px transparent;
   transition: all .2s ease-in-out;
@@ -73,5 +73,5 @@
 .index-footer>img{
   width: 100%;
   height: 100%;
-  
+
 }

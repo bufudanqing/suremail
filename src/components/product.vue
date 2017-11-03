@@ -89,7 +89,10 @@
                <img v-bind:src="title3" />
             </div>
             <div class="sub-banner">
-              <div class="sub-banner-item" v-for="item in banner2">
+              <!-- <input type="radio" name="news" id="i1" checked>
+              <input type="radio" name="news" id="i2">
+              <input type="radio" name="news" id="i3"> -->
+              <div class="sub-banner-item" v-for="(item,index) in banner2" v-bind:id= "'item_'+index">
                 <img :src="item.pic" />
               </div>
               <ul class="sub-banner-dot">
@@ -194,6 +197,19 @@
             }
           ]
         }
+      },
+      mounted () {
+        this.autoLoop()
+      },
+      methods: {
+        autoLoop: function () {
+          setInterval(() => {
+            this.loop()
+          }, 500)
+        },
+        loop: function () {
+          console.log('func B')
+        }
       }
     }
 </script>
@@ -287,8 +303,7 @@
   width: 91px;
   height:130px;
   margin-right:250px;
-  border:solid;
-
+  /*border:solid;*/
 }
 
 .icon-wrapper>.item2{
@@ -302,7 +317,7 @@
 }
 .type-intro{
   width: 100%;
-  height: 1199px;
+  height: 1100px;
   padding-top: 103px;
   padding-bottom:168px;
 }
@@ -310,7 +325,7 @@
   width: 1050px;
   height: 100%;
   margin:0 auto;
-  border:solid;
+  /*border:solid;*/
 }
 .type-intro-title{
   width: 100%;
@@ -330,6 +345,10 @@
   font-family: "思源黑体","黑体";
   font-size: 16px;
   color:#8f8e8e;
+}
+.nav-item:hover span{
+  color:deepskyblue;
+  cursor: pointer;
 }
 .nav-item span:nth-child(2){
   font-size: 14px;
@@ -357,7 +376,7 @@
   width:500px;
   height: 279px;
   margin-bottom: 40px;
-  border:solid;
+  /*border:solid;*/
 }
 .main-parts-item:nth-child(3),.main-parts-item:nth-child(4){
   margin-right: 40px;
@@ -365,7 +384,7 @@
 .main-parts-item:nth-child(3),.main-parts-item:nth-child(4),.main-parts-item:nth-child(5){
   width:320px;
   height: 279px;
-  border:solid;
+  /*border:solid;*/
 }
 .main-parts-item .cover{
   position: absolute;
@@ -401,11 +420,17 @@
   font-size: 16px;
   color:#fcc261;
 
+  opacity: 0;
   position: absolute;
+  top:150px;
+  transition: all .5s ease-in-out;
+}
+.main-parts-item:hover .desc{
+  opacity: 1;
   top:100px;
 }
 .main-parts-item .cover:hover{
-  opacity: .3;
+  opacity: .5;
 }
 .feature-container{
   width: 1350px;
@@ -486,6 +511,19 @@
   height: 450px;
   position: absolute;
 }
+.level3{
+  z-index: 3;
+  left:150px;
+  top:80px;
+}
+.level2{
+  z-index: 2;
+  left:70px;
+  top:30px;
+}
+.level1{
+  z-index: 1;
+}
 .sub-banner-item:nth-child(1){
   z-index: 3;
   left:150px;
@@ -514,11 +552,17 @@
 }
 .sub-banner-dot>li{
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-bottom: 20px;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 15px;
   border:solid 1px #1f64a2;
   border-radius: 6px;
+  transition: all .3s ease-in-out;
+}
+.sub-banner-dot>li:hover{
+  background: #1f64a2;
+  border:none;
+  cursor: pointer;
 }
 .sub-banner-active{
   background-color:#1f64a2;
