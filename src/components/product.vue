@@ -109,6 +109,8 @@
 <script>
     // import Waves from '../js/waves.js'
     // Vue.use(VueWaves)
+    import Waves from 'node-waves/dist/waves.min'
+    import 'node-waves/dist/waves.min.css'
     export default {
       name: 'Product',
       data () {
@@ -199,8 +201,10 @@
         }
       },
       mounted () {
-        this.startSlider()
-        console.log(this.$refs.dis1)
+        // this.startSlider()
+        // console.log(this.$refs.dis1)
+        Waves.init()
+        Waves.attach('.icon-item', ['waves-block'])
       },
       methods: {
         startSlider: function () {
@@ -383,12 +387,12 @@
 }
 .main-parts-item .cover{
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   height: 100%;
   opacity: 0;
   background-color: #1f64a2;
-  transition:all .5s ease-in-out;
+  transition:all .3s ease-in-out;
 }
 .main-parts-item .title,.main-parts-item .desc{
   position: absolute;
@@ -424,8 +428,8 @@
   opacity: 1;
   top:100px;
 }
-.main-parts-item .cover:hover{
-  opacity: .5;
+.main-parts-item:hover .cover{
+  opacity: .8;
 }
 .feature-container{
   width: 1350px;

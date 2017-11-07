@@ -639,12 +639,12 @@
   margin-top:20px;
   padding-top:20px;
   box-shadow: none;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 .business-item-wrapper:hover{
   box-shadow: 0 1px 3px rgba(0,0,0,0.12),
   0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.1s cubic-bezier(.25,.8,.25,1);
+  /*transition: all 0.5s cubic-bezier(.25,.8,.25,1);*/
 }
 .business-item{
   width:550px;
