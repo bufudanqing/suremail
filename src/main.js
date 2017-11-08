@@ -6,6 +6,8 @@ import router from './router'
 import echarts from 'echarts'
 import iView from 'iview'
 import store from './../store/index'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 // import VueWaves from 'vue-waves'
 import 'iview/dist/styles/iview.css'    // 使用 CSS
 require('./assets/css/navigation.css')
@@ -18,8 +20,7 @@ Vue.prototype.$echarts = echarts
 // Vue.use(VueRouter)
 Vue.use(iView)
 Vue.use(store)
-// var VueWaves = require('vue-waves')
-// Vue.use(VueWaves)
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 // const router = new VueRouter({

@@ -88,10 +88,12 @@
             <div class="solution-title">
                <img v-bind:src="title3" />
             </div>
-            <div class="sub-banner">
-              <!-- <input type="radio" name="news" id="i1" checked>
-              <input type="radio" name="news" id="i2">
-              <input type="radio" name="news" id="i3"> -->
+            <el-carousel :interval="4000" type="card" height="200px">
+             <el-carousel-item v-for="item in banner2" :key="item" :style="{backgroundImage: 'url(' + item.pic + ')',backgroundSize:cover}">
+               <!-- <h3>{{ item }}</h3> -->
+             </el-carousel-item>
+           </el-carousel>
+            <!-- <div class="sub-banner">
               <div class="sub-banner-item" v-for="(item,index) in banner2" :ref= "item.name">
                 <img :src="item.pic" />
               </div>
@@ -100,7 +102,7 @@
                 <li></li>
                 <li></li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -215,6 +217,21 @@
 
 <style scoped>
 @import '/static/css/waves.min.css';
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }
 .banner>img{
   width: 100%;
   height: 100%;
