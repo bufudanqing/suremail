@@ -34,30 +34,39 @@
 </template>
 
 <script>
+    import joinbanner from '../assets/img/joinus/banner.png'
+    import more from '../assets/img/joinus/more.png'
+    import title from '../assets/img/joinus/title.png'
+    import public1 from '../assets/img/joinus/public.png'
+    import code from '../assets/img/joinus/code.png'
+    import codedesc from '../assets/img/joinus/code-desc.png'
+    import pic1 from '../assets/img/joinus/1.png'
+    import pic2 from '../assets/img/joinus/2.png'
+    import pic3 from '../assets/img/joinus/3.png'
     export default {
       name: 'joinus',
       data () {
         return {
-          joinbanner: '/static/img/joinus/banner.png',
-          more: '/static/img/joinus/more.png',
-          title: '/static/img/joinus/title.png',
-          public: '/static/img/joinus/public.png',
-          code: '/static/img/joinus/code.png',
-          codedesc: '/static/img/joinus/code-desc.png',
+          joinbanner: joinbanner,
+          more: more,
+          title: title,
+          public: public1,
+          code: code,
+          codedesc: codedesc,
           items: [
             {
               name: 'UI',
-              pic: '/static/img/joinus/1.png',
+              pic: pic1,
               alt: 'UI'
             },
             {
               name: 'UI',
-              pic: '/static/img/joinus/2.png',
+              pic: pic2,
               alt: 'UI'
             },
             {
               name: 'UI',
-              pic: '/static/img/joinus/3.png',
+              pic: pic3,
               alt: 'UI'
             }
           ]

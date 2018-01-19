@@ -216,73 +216,89 @@
 </template>
 
 <script>
+  import imgUrl from '../assets/img/logo-mail.png'
+  import imgUrl1 from '../assets/img/intro.png'
+  import titleImg1 from '../assets/img/news-title.png'
+  import footer1 from '../assets/img/index-footer.png'
+  import business1 from '../assets/img/business-title.png'
+  import emtitle1 from '../assets/img/emtitle.png'
+  import emdesc1 from '../assets/img/email_desc.png'
+  import picture1 from '../assets/img/banner/banner01.png'
+  import picture2 from '../assets/img/banner/banner02.jpg'
+  import picture3 from '../assets/img/banner/banner03.jpg'
+  import picture4 from '../assets/img/banner/banner04.jpg'
+  import news1 from '../assets/img/news/news1.png'
+  import news2 from '../assets/img/news/news2.png'
+  import news3 from '../assets/img/news/news3.png'
+  import news4 from '../assets/img/news/news4.png'
+  import info1 from '../assets/img/info/info1.png'
+  import info2 from '../assets/img/info/info2.png'
+  import info3 from '../assets/img/info/info3.png'
+
   import { Carousel } from 'iview'
-  // export default {
-  //   components: { Carousel }
-  // }
 
   export default {
     name: 'index',
     data () {
       return {
-        imgUrl: '/static/img/logo-mail.png',
-        imgUrl1: '/static/img/intro.png',
-        titleImg: '/static/img/news-title.png',
-        footer: '/static/img/index-footer.png',
-        business: '/static/img/business-title.png',
-        emtitle: '/static/img/emtitle.png',
-        emdesc: '/static/img/email_desc.png',
+        imgUrl: imgUrl,
+        imgUrl1: imgUrl1,
+        titleImg: titleImg1,
+        footer: footer1,
+        business: business1,
+        emtitle: emtitle1,
+        emdesc: emdesc1,
         members: [
           {
             name: 'L',
-            picture: '/static/img/banner/banner01.png',
+            picture: picture1,
             alt: 'suremail banner'
           },
           {
             name: 'L',
-            picture: '/static/img/banner/banner02.jpg',
+            picture: picture2,
             alt: 'suremail banner'
           },
           {
             name: 'L',
-            picture: '/static/img/banner/banner03.jpg',
+            picture: picture3,
             alt: 'suremail banner'
           },
           {
             name: 'L',
-            picture: '/static/img/banner/banner04.jpg',
+            picture: picture4,
             alt: 'suremail banner'
           }
         ],
         news: [
           {
-            picture: '/static/img/news/news1.png',
+            picture: news1,
             alt: 'news background image'
           },
           {
-            picture: '/static/img/news/news2.png',
+            picture: news2,
             alt: 'news background image'
           },
           {
-            picture: '/static/img/news/news3.png',
+            picture: news3,
             alt: 'news background image'
           },
           {
-            picture: '/static/img/news/news4.png',
+            picture: news4,
             alt: 'news background image'
           }
         ],
         info: [
           {
-            picture: '/static/img/info/info1.png',
+            picture: info1,
             alt: 'info background image'
           },
           {
-            picture: '/static/img/info/info2.png',
+            picture: info2,
             alt: 'info background image'
           },
           {
-            picture: '/static/img/info/info3.png',
+            picture: info3,
             alt: 'info background image'
           }
         ],

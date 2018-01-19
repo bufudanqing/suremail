@@ -7,32 +7,30 @@
 </template>
 
 <script>
+  import index from '../assets/img/footer/index.png'
+  import more from '../assets/img/footer/more.png'
+  import product from '../assets/img/footer/product.png'
+  import information from '../assets/img/footer/information.png'
+  import news from '../assets/img/footer/news.png'
+  import down from '../assets/img/footer/down.png'
+  import enterprise from '../assets/img/footer/enterprise.png'
+  import joinus from '../assets/img/footer/joinus.png'
+  
   import { Carousel } from 'iview'
-  // export default {
-  //   components: { Carousel }
-  // }
-
   export default {
     name: 'index',
     data () {
       return {
         imgList: {
-          index: '/static/img/footer/index.png',
-          more: '/static/img/footer/more.png',
-          product: '/static/img/footer/product.png',
-          information: '/static/img/footer/information.png',
-          news: '/static/img/footer/news.png',
-          down: '/static/img/footer/down.png',
-          enterprise: '/static/img/footer/enterprise.png',
-          joinus: '/static/img/footer/joinus.png'
+          index: index,
+          more: more,
+          product: product,
+          information: information,
+          news: news,
+          down: down,
+          enterprise: enterprise,
+          joinus: joinus
         },
-        // index: '/static/img/footer/index.png',
-        // more: '/static/img/footer/index.png',
-        // product: '/static/img/footer/index.png',
-        // information: '/static/img/footer/index.png',
-        // news: '/static/img/footer/index.png',
-        // down: '/static/img/footer/index.png',
-        // enterprise: '/static/img/footer/enterprise.png',
         value3: 0,
         setting: {
           autoplay: true,

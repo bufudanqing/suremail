@@ -28,7 +28,7 @@
           </div>
            <div class="v-ad">
               此处视频
-          </div>  
+          </div>
           <div class="partner">
             <div class="partner-title">
                 <img :src="partner" />
@@ -42,8 +42,8 @@
 
             </div>
             <a class="know-more">了解更多</a>
-          </div> 
-              
+          </div>
+
         </div>
         <div class="contact-us">
             <div class="contactus-title">
@@ -64,19 +64,28 @@
 </template>
 
 <script>
+    import morebanner from '../assets/img/more/banner.png'
+    // import more from '../assets/img/more/more.png'
+    import title from '../assets/img/more/title.png'
+    import anyou from '../assets/img/more/anyou.png'
+    import abouttitle from '../assets/img/more/title1.png'
+    import partner from '../assets/img/more/partner.png'
+    import logo from '../assets/img/more/logo.png'
+    import contact from '../assets/img/more/contact.png'
+    import info from '../assets/img/more/info.png'
     export default {
       name: 'joinus',
       data () {
         return {
-          morebanner: '/static/img/more/banner.png',
-          more: '/static/img/more/more.png',
-          title: '/static/img/more/title.png',
-          anyou: '/static/img/more/anyou.png',
-          abouttitle: '/static/img/more/title1.png',
-          partner: '/static/img/more/partner.png',
-          logo: '/static/img/more/logo.png',
-          contact: '/static/img/more/contact.png',
-          info: '/static/img/more/info.png'
+          morebanner: morebanner,
+          // more: more,
+          title: title,
+          anyou: anyou,
+          abouttitle: abouttitle,
+          partner: partner,
+          logo: logo,
+          contact: contact,
+          info: info
         }
       }
     }
@@ -185,7 +194,7 @@
     width: 1000px;
     font-size: 18px;
     color: #070707;
-    font-family: "黑体";
+    /* font-family: "黑体"; */
     line-height:30px;
     text-align: center;
     margin: 0 auto;

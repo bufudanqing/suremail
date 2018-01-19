@@ -51,12 +51,14 @@
 </template>
 
 <script>
+    import banner from '../assets/img/enterprise/banner.png'
+    import title from '../assets/img/enterprise/title.png'
     export default {
       name: 'joinus',
       data () {
         return {
-          banner: '/static/img/enterprise/banner.png',
-          title: '/static/img/enterprise/title.png'
+          banner: banner,
+          title: title
         }
       },
       mounted () {

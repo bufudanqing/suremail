@@ -125,27 +125,44 @@
 </template>
 
 <script>
+    import downbanner from '../assets/img/down/banner.png'
+    // import more from '../assets/img/down/more.png'
+    // import title from '../assets/img/down/title.png'
+    // import public1 from '../assets/img/down/public.png'
+    import p1 from '../assets/img/down/xz0.png'
+    import p2 from '../assets/img/down/cy0.png'
+    import p3 from '../assets/img/down/bd0.png'
+    import pic1 from '../assets/img/down/xz.png'
+    import pic2 from '../assets/img/down/cy.png'
+    import pic3 from '../assets/img/down/bd.png'
+    import pic11 from '../assets/img/down/xz1.png'
+    import pic22 from '../assets/img/down/cy1.png'
+    import pic33 from '../assets/img/down/bd1.png'
+    import item1 from '../assets/img/down/1.png'
+    import item2 from '../assets/img/down/2.png'
+    import item3 from '../assets/img/down/3.png'
+    import item4 from '../assets/img/down/4.png'
     export default {
       name: 'download',
       data () {
         return {
-          downbanner: '/static/img/down/banner.png',
-          more: '/static/img/down/more.png',
-          title: '/static/img/down/title.png',
-          public: '/static/img/down/public.png',
-          p1: '/static/img/down/xz.png',
-          p2: '/static/img/down/cy.png',
-          p3: '/static/img/down/bd.png',
-          pic1: '/static/img/down/xz.png',
-          pic2: '/static/img/down/cy.png',
-          pic3: '/static/img/down/bd.png',
-          pic11: '/static/img/down/xz1.png',
-          pic22: '/static/img/down/cy1.png',
-          pic33: '/static/img/down/bd1.png',
-          item1: '/static/img/down/1.png',
-          item2: '/static/img/down/2.png',
-          item3: '/static/img/down/3.png',
-          item4: '/static/img/down/4.png'
+          downbanner: downbanner,
+          // more: more,
+          // title: title,
+          // public: public1,
+          p1: p1,
+          p2: p2,
+          p3: p3,
+          pic1: pic1,
+          pic2: pic2,
+          pic3: pic3,
+          pic11: pic11,
+          pic22: pic22,
+          pic33: pic33,
+          item1: item1,
+          item2: item2,
+          item3: item3,
+          item4: item4
         }
       }
     }

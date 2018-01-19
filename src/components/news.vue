@@ -159,56 +159,74 @@
 </template>
 
 <script>
+import banner from '../assets/img/news/banner.png'
+import title1 from '../assets/img/news/title1.png'
+import title2 from '../assets/img/news/title2.png'
+import title3 from '../assets/img/news/title3.png'
+import title4 from '../assets/img/news/title4.png'
+import news1 from '../assets/img/news/1.png'
+import news2 from '../assets/img/news/2.png'
+import news3 from '../assets/img/news/3.png'
+
+import news4 from '../assets/img/news/4.png'
+import news5 from '../assets/img/news/5.png'
+import news6 from '../assets/img/news/6.png'
+import news7 from '../assets/img/news/7.png'
+
+import bg1 from '../assets/img/news/bg1.png'
+import bg2 from '../assets/img/news/bg2.png'
+import bg3 from '../assets/img/news/bg3.png'
+import bg4 from '../assets/img/news/bg4.png'
 export default {
   name: 'news',
   data () {
     return {
-      banner: '/static/img/news/banner.png',
-      title1: '/static/img/news/title1.png',
-      title2: '/static/img/news/title2.png',
-      title3: '/static/img/news/title3.png',
-      title4: '/static/img/news/title4.png',
-      news1: '/static/img/news/1.png',
-      news2: '/static/img/news/2.png',
-      news3: '/static/img/news/3.png',
+      banner: banner,
+      title1: title1,
+      title2: title2,
+      title3: title3,
+      title4: title4,
+      news1: news1,
+      news2: news2,
+      news3: news3,
       newsPic: [
         {
           name: 'news',
-          url: '/static/img/news/4.png'
+          url: news4
         },
         {
           name: 'news',
-          url: '/static/img/news/5.png'
+          url: news5
         },
         {
           name: 'news',
-          url: '/static/img/news/6.png'
+          url: news6
         },
         {
           name: 'news',
-          url: '/static/img/news/7.png'
+          url: news7
         }
       ],
       bg: [
         {
           name: 'news2',
           date: '2017.10.10',
-          url: '/static/img/news/bg1.png'
+          url: bg1
         },
         {
           name: 'news2',
           date: '2017.10.9',
-          url: '/static/img/news/bg2.png'
+          url: bg2
         },
         {
           name: 'news2',
           date: '2017.10.8',
-          url: '/static/img/news/bg3.png'
+          url: bg3
         },
         {
           name: 'news2',
           date: '2017.10.7',
-          url: '/static/img/news/bg4.png'
+          url: bg4
         }
       ]
     }

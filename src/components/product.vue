@@ -88,7 +88,7 @@
             <div class="solution-title">
                <img v-bind:src="title3" />
             </div>
-            <el-carousel :interval="4000" type="card" height="200px">
+            <el-carousel :interval="4000" type="card" height="500px" :style="{top:'150px'}">
              <el-carousel-item v-for="item in banner2" :key="item" :style="{backgroundImage: 'url(' + item.pic + ')',backgroundSize:cover}">
                <!-- <h3>{{ item }}</h3> -->
              </el-carousel-item>
@@ -109,95 +109,121 @@
     </div>
 </template>
 <script>
-    // import Waves from '../js/waves.js'
-    // Vue.use(VueWaves)
+    import banner from '../assets/img/product/banner.png'
+    import intro from '../assets/img/product/intro.png'
+    import title from '../assets/img/product/title.png'
+    import gap from '../assets/img/product/gap.png'
+    import solution from '../assets/img/product/solution.png'
+    import feature from '../assets/img/product/feature.png'
+    import type from '../assets/img/product/type.png'
+    import title1 from '../assets/img/product/title1.png'
+    import title2 from '../assets/img/product/title2.png'
+    import title3 from '../assets/img/product/title3.png'
+    import pc from '../assets/img/product/pc.png'
+    import pic1 from '../assets/img/product/p1.png'
+    import pic2 from '../assets/img/product/p2.png'
+    import pic3 from '../assets/img/product/p3.png'
+    import pic4 from '../assets/img/product/p4.png'
+    import pic5 from '../assets/img/product/p5.png'
+
+    import pic6 from '../assets/img/product/desc1.png'
+    import pic7 from '../assets/img/product/desc2.png'
+    import pic8 from '../assets/img/product/desc3.png'
+    import pic9 from '../assets/img/product/desc4.png'
+    import pic10 from '../assets/img/product/desc5.png'
+    import pic11 from '../assets/img/product/desc6.png'
+
+    import pic12 from '../assets/img/product/dis1.png'
+    import pic13 from '../assets/img/product/dis2.png'
+    import pic14 from '../assets/img/product/dis3.png'
+
     import Waves from 'node-waves/dist/waves.min'
     import 'node-waves/dist/waves.min.css'
     export default {
       name: 'Product',
       data () {
         return {
-          banner: '/static/img/product/banner.png',
-          intro: '/static/img/product/intro.png',
-          title: '/static/img/product/title.png',
-          gap: '/static/img/product/gap.png',
-          solution: '/static/img/product/solution.png',
-          feature: '/static/img/product/feature.png',
-          type: '/static/img/product/type.png',
-          title1: '/static/img/product/title1.png',
-          title2: '/static/img/product/title2.png',
-          title3: '/static/img/product/title3.png',
-          pc: '/static/img/product/pc.png',
+          banner: banner,
+          intro: intro,
+          title: title,
+          gap: gap,
+          solution: solution,
+          feature: feature,
+          type: type,
+          title1: title1,
+          title2: title2,
+          title3: title3,
+          pc: pc,
           nav: [
             {
               name: '政务安全邮',
               e_name: 'Government security post',
-              pic: '/static/img/product/p1.png',
+              pic: pic1,
               desc: '面向党政机关'
             },
             {
               name: '公务邮',
               e_name: 'Business post',
-              pic: '/static/img/product/p2.png',
+              pic: pic2,
               desc: '面向大型企事业单位'
             },
             {
               name: '智慧邮',
               e_name: 'Wisdom post',
-              pic: '/static/img/product/p3.png',
+              pic: pic3,
               desc: '面向智慧城市民生领域'
             },
             {
               name: '海外邮',
               e_name: 'Overseas post mail',
-              pic: '/static/img/product/p4.png',
+              pic: pic4,
               desc: '支持国内外邮件之间的互联互通'
             },
             {
               name: '国别邮',
               e_name: 'Country mail',
-              pic: '/static/img/product/p5.png',
+              pic: pic5,
               desc: '面向一带一路多语种'
             }
           ],
           features: [
             {
               name: 'features',
-              pic: '/static/img/product/desc1.png'
+              pic: pic6
             },
             {
               name: 'features',
-              pic: '/static/img/product/desc2.png'
+              pic: pic7
             },
             {
               name: 'features',
-              pic: '/static/img/product/desc3.png'
+              pic: pic8
             },
             {
               name: 'features',
-              pic: '/static/img/product/desc4.png'
+              pic: pic9
             },
             {
               name: 'features',
-              pic: '/static/img/product/desc5.png'
+              pic: pic10
             },
             {
               name: '国别邮',
-              pic: '/static/img/product/desc6.png'
+              pic: pic11
             }
           ],
           banner2: [
             {
               name: 'dis1',
-              pic: '/static/img/product/dis1.png'
+              pic: pic12
             },
             {
               name: 'dis2',
-              pic: '/static/img/product/dis2.png'
+              pic: pic13
             },
             {
               name: 'dis3',
-              pic: '/static/img/product/dis3.png'
+              pic: pic14
             }
           ]
         }
@@ -582,6 +608,9 @@
 }
 .sub-banner-active{
   background-color:#1f64a2;
+}
+el-carousel{
+  top:100px;
 }
 @keyframes pulse
 {
